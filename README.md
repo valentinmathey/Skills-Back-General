@@ -10,14 +10,22 @@ El objetivo de este repositorio es darle a tus asistentes de código el contexto
 
 Para comenzar a utilizar este arsenal de *skills* en tus proyectos locales, el método oficial de instalación es utilizar la herramienta `npx` apuntando directamente a tu repositorio de GitHub. 
 
-Ejecuta el siguiente comando en tu terminal para descargar las habilidades de este repo directamente a tu proyecto:
+Ejecuta el siguiente comando en tu terminal para iniciar el proceso de instalación:
 
 ```bash
 npx skills add valentinmathey/Skills-Back-General
 ```
-*(Este comando descargará exactamente esta versión de las skills de backend).*
 
-Con este comando, descargarás toda la estructura de skills contenida aquí dentro de tu proyecto local para que tu IA elegida comience a integrarlas.
+Al ejecutarlo, se desplegará un menú interactivo en la consola con los siguientes pasos:
+
+1. **Seleccionar Skills**: Se mostrará una lista con todas las habilidades disponibles. Usa la barra espaciadora para seleccionar las que necesites para tu proyecto.
+2. **Seleccionar Agentes**: Elige en qué asistentes o IAs deseas que se instalen (puedes buscar y seleccionar conocidos como Gemini, Claude, Codex, Antigravity, Cursor, entre otros).
+3. **Alcance de Instalación (Scope)**: 
+   - **Project**: Instala las skills en el directorio actual (ideal para hacer commit junto con tu proyecto).
+   - **Global**: Las instala de manera global.
+4. **Método de Instalación**:
+   - **Symlink (Recomendado)**: Crea enlaces simbólicos. Mantiene una única fuente de verdad y facilita las actualizaciones.
+   - **Copy to all agents**: Copia físicamente los archivos a los directorios de los agentes seleccionados.
 
 ---
 
